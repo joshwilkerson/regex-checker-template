@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoints(from-md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    display: inline-flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 1em;
+
+    @include breakpoints(from-md) {
+      flex-basis: calc(50% - .5em);
+    }
+  }
+
+  label {
+    display: block;
+    margin-bottom: .25em;
+    color: $teal;
+    font-weight: 600;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #C0C0E5;
+    background: #F2F2FF;
+    transition: .2s all ease;
+    padding: .75em;
+    font-size: 1em;
+    color: $base-font-color;
+
+    &:focus {
+      background: #fff;
+      border-color: $teal;
+      box-shadow: 0px 10px 15px -15px rgba($purple, .25);
+    }
+  }
+}

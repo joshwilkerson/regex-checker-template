@@ -1,0 +1,28 @@
+.results {
+  padding-top: .5em;
+  display: block;
+
+  h2 {
+    border-bottom: 1px solid rgba($teal, .2);
+    padding: 0;
+    margin: 0 0 .5em 0;
+    line-height: 1;
+  }
+
+  h3 {
+    margin-top: .5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    font-size: 1.1em;
+
+    span {
+      font-weight: 600;
+      color: $teal;
+    }
+  }
+}

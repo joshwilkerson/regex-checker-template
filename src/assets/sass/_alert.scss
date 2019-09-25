@@ -1,0 +1,10 @@
+.alert {
+  background: linear-gradient(to right, $red 0%, adjust-color($red, $lightness: 10%, $saturation: -5%) 100%);
+  border-radius: 4px;
+  padding: .5em .75em;
+  margin: 0 0 .5em 0;
+  border: 1px solid adjust-color($red, $lightness: -5%);
+  color: #fff;
+  font-weight: normal;
+  transition: .2s all ease;
+}
