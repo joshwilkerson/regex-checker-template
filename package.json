@@ -1,11 +1,11 @@
 {
-  "name": "parcel-js-react-starter",
+  "name": "regex-checker-template",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshwilkerson/parcel-js-react-starter"
+    "url": "https://github.com/joshwilkerson/regex-checker-template"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel src/index.html --port 1234 --open",
