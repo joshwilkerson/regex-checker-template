@@ -3,4 +3,26 @@ footer {
   margin-top: 2em;
   padding-top: .25em;
   border-top: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoints(from-sm) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    a {
+      color: $purple;
+      font-weight: 400;
+      text-decoration: none;
+      margin: 0 .5em 0 0;
+      transition: .2s all ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: adjust-color($purple, $lightness: -3%);
+      }
+    }
+  }
 }

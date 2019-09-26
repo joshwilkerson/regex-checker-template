@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { Fragment } from "react"
+import { obj } from "prop-types"
 
 import Header from "./header"
 import Form from "./form"
@@ -6,20 +7,23 @@ import Alert from "./alert"
 import Results from "./results"
 import Footer from "./footer"
 
-const RegexChecker = () => {
-	const [showAlert, setShowAlert] = useState(false)
-
+const RegexChecker = props => {
 	return (
-		<div className="container">
-			<div className="content">
+		<Fragment>
+			<div>
 				<Header />
 				<Form />
-				{showAlert && <Alert />}
+				<Alert />
 				<Results />
-				<Footer showAlert={showAlert} setShowAlert={setShowAlert} />
 			</div>
-		</div>
+
+			<Footer currentPath={props.location.pathname} />
+		</Fragment>
 	)
+}
+
+RegexChecker.propTypes = {
+	location: obj,
 }
 
 export default RegexChecker

@@ -1,20 +1,24 @@
 import React from "react"
-import { bool, func } from "prop-types"
+import { Link } from "react-router-dom"
+import { string } from "prop-types"
 
 const Footer = props => {
 	return (
-		<footer style={{ display: "flex", justifyContent: "space-between" }}>
-			<span>&copy; 2019 Geoffrey Lessel</span>
-			<span onClick={() => props.setShowAlert(!props.showAlert)}>
-				toggle alert
-			</span>
+		<footer>
+			<nav>
+				{props.currentPath === "/" ? (
+					<Link to="/about/">About</Link>
+				) : (
+					<Link to="/">Home</Link>
+				)}
+			</nav>
+			<p>&copy; 2019 Geoffrey Lessel</p>
 		</footer>
 	)
 }
 
 Footer.propTypes = {
-	showAlert: bool,
-	setShowAlert: func,
+	currentPath: string,
 }
 
 export default Footer
