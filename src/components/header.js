@@ -3,7 +3,7 @@ import React from "react"
 const Header = () => {
 	return (
 		<header>
-			<h1>Regex Checker</h1>
+			<h1>Elixir Regex</h1>
 		</header>
 	)
 }

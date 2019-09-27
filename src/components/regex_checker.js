@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { obj } from "prop-types"
+import { object } from "prop-types"
 
 import Header from "./header"
 import Form from "./form"
@@ -23,7 +23,7 @@ const RegexChecker = props => {
 }
 
 RegexChecker.propTypes = {
-	location: obj,
+	location: object,
 }
 
 export default RegexChecker
