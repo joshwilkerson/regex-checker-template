@@ -10,7 +10,7 @@ const AboutPage = withRouter(props => <About {...props} />)
 
 const App = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/regex-checker-template">
 			<Container currentPath={location.pathname}>
 				<Route path="/" exact component={IndexPage} />
 				<Route path="/about/" component={AboutPage} />
