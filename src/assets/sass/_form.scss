@@ -22,6 +22,7 @@
     width: 100%;
     font-size: 1em;
     color: $base-font-color;
+    box-sizing: border-box;
 
     &:focus {
       background: #fff;

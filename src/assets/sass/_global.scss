@@ -6,6 +6,7 @@ body {
 	font-size: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
   color: $base-font-color;
+  overflow-x: hidden;
 }
 
 html {
@@ -17,8 +18,14 @@ html {
   max-width: 840px;
 	height: auto;
   min-height: 400px;
-	margin: 50px auto;
+	margin: 20px auto;
 	position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 30px -30px rgba(0,0,0,1);
+
+  @include breakpoints(from-md) {
+    margin-top: 50px;
+  }
 
   &:before,
   &:after {
@@ -63,6 +70,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 
   @include breakpoints(from-md) {
     padding-left: calc(2em + 50px);
