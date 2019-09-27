@@ -5,7 +5,9 @@ const Form = () => {
 	return (
 		<section className="form">
 			<div className="form-group">
-				<label>Regex:</label>
+				<label>
+					Regex: <span>a label description could go here...</span>
+				</label>
 				<input type="text" />
 			</div>
 

@@ -9,6 +9,14 @@
     margin-bottom: .25em;
     color: $teal;
     font-weight: 600;
+
+    span {
+      display: block;
+      font-weight: 400;
+      color: $gray_600;
+      font-size: .9rem;
+      padding: .125em 0 0 0;
+    }
   }
 
   textarea,
