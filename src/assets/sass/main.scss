@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600&display=swap');
+@import '~node_modules/normalize.css/normalize';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
 
-@import "reset";
 @import "queries";
 @import "colors";
 
 @import "global";
 @import "text";
+@import "columns";
 @import "header";
 @import "form";
 @import "alert";
 @import "results";
 @import "footer";
+
+@import "utilities";

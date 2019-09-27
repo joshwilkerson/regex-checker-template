@@ -1,16 +1,55 @@
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
 h1 {
   color: $purple;
+  border-bottom: 1px solid adjust-color($purple, $lightness: 60%, $saturation: -10%);
   font-weight: 200;
-  font-size: 3em;
+  font-size: 3.2em;
+  margin-bottom: .5em;
 }
 
 h2 {
   color: $teal;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.8em;
+  margin-bottom: .25em;
 }
 
 h3 {
+  font-weight: 400;
+  font-size: 1.4em;
+  margin-bottom: .25em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+strong {
   font-weight: 600;
-  font-size: 1.25em;
+}
+
+a {
+  font-weight: 600;
+  color: $purple;
+  text-decoration: none;
+  transition: .2s all ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: adjust-color($purple, $lightness: -3%);
+  }
+}
+
+pre {
+  background: $gray_100;
+  display: inline-block;
+  padding: .25em;
+  border-radius: 4px;
+  padding: .5em .75em;
+  margin-top: 0;
 }
